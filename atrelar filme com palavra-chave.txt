@@ -1,0 +1,10 @@
+atrelar filme com palavra-chave
+
+buscar filme na base da api (para atrelar)
+
+
+precisa:
+
+salvar algo no banco de dados
+
+requisicoes por api
