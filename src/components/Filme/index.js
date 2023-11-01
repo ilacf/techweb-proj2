@@ -10,6 +10,7 @@ const Filme = (props) => {
     const imagem = props.infos.primaryImage.url;
     const releaseYear = props.infos.releaseYear.year;
     const titulo = props.infos.titleText.text;
+    const id = props.infos.id;
 
   return (
     <Card
@@ -23,13 +24,7 @@ const Filme = (props) => {
         />
         }
     >
-        <Link className="link" to={{
-            pathname: `pagfilme/${titulo}`,
-            state: {
-                releaseYear: releaseYear,
-                img: imagem                    
-            }
-        }}>
+        <Link className="link" to={`pagfilme/${id}`}>
             <Meta
             title={titulo}
             description={`Release year: ${releaseYear}`}
